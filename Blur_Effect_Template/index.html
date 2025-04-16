@@ -1,18 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Motion Blur Background</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Journal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="background">
-    <img src="images/BG1.jpg" class="bg-layer" style="animation-delay: 0s;">
-    <img src="images/BG2.jpg" class="bg-layer" style="animation-delay: 10s;">
-    <img src="images/BG3.jpg" class="bg-layer" style="animation-delay: 20s;">
-  </div>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Contacts</a>
+            <a href="">Info</a>
+        </nav>
+    </header>
 
-  <div class="content">
-  </div>
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="images/bgbook2.jpg">
+                <div class="content">
+                    <div class="author">Mollydayne</div>
+                    <div class="title">Reading</div>
+                    <div class="topic">Journal</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                       Bienvenue ! Voici mes dernières lectures.
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/nettlebg.jpg">
+                <div class="content">
+                    <div class="author">Coup de coeur</div>
+                    <div class="title">Nettle and Bone </div>
+                    <div class="topic">Fantaisie</div>
+                    <div class="des">
+                        Une critique subtile des contes de fée classiques. Aux côtés de Marra, on est embarqué dans une quête qui passe par des travaux impossibles dignes de ceux d’Hercule. On plonge dans une aventure sombre, avec une héroïne mature et déterminée, loin des clichés.
+                    </div>
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/assistantBG.jpg">
+                <div class="content">
+                    <div class="author">Coup de coeur</div>
+                    <div class="title">Assistant to the vilain</div>
+                    <div class="topic">Romantaisie</div>
+                    <div class="des">
+                      Evie, jeune femme sarcastique et fauchée, accepte un poste… inattendu : assistante personnelle d’un super vilain charismatique et dangereux. Entre paperasse, réunions de torture, et chaos administratif, elle découvre un monde où les méchants ne sont pas toujours ceux qu’on croit.
+
+Mais bientôt, des meurtres étranges menacent l’équilibre du royaume, et même l’organisation impeccablement maléfique de son patron…L’univers mélange comédie de bureau et dark fantasy. 
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/clubBG.jpg">
+                <div class="content">
+                    <div class="author">4 /5 </div>
+                    <div class="title">Club des mauvais jours</div>
+                    <div class="topic">Mystère historique</div>
+                    <div class="des">
+                        Lady Augusta "Gus" Colebrook et sa sœur jumelle Julia ont dépassé l’âge du mariage, mais pas celui des aventures. Refusant de rester silencieuses face aux injustices, elles fondent un club secret pour venir en aide aux femmes de la haute société maltraitées, piégées ou oubliées. Entre enlèvements, secrets, complots et retour d’un amour perdu, leur quête pour la justice fait voler en éclats les convenances.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="images/BG1.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/nettle.jpg">
+                <div class="content">
+                    <div class="title">
+                        Home
+                    </div>
+                    <div class="description">
+                        Go back Home
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/assistant.png">
+                <div class="content">
+                    <div class="title">
+                        Nettle and Bone
+                    </div>
+                    <div class="description">
+                        T.Kingfisher
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/clubmauvaisjours.jpg">
+                <div class="content">
+                    <div class="title">
+                        Name Slider
+                    </div>
+                    <div class="description">
+                        Description
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+
+        <div class="pause-control">
+            <button id="pause">⏸️</button> <!-- Nouveau bouton pause/reprendre -->
+        </div>
+
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
